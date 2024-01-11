@@ -5,7 +5,8 @@ import {Main} from "./layout/sections/main/Main";
 import {Skills} from "./layout/sections/skills/Skils";
 import {About} from "./layout/sections/about/About";
 import {Projects} from "./components/projects/Projects";
-import {Questions} from "./components/questions/Questions";
+import {Contacts} from "./components/contacts/Contacts";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
             <About/>
             <Skills/>
             <Projects/>
-            <Questions/>
+            <Contacts/>
+            <Footer/>
         </div>
     );
 }

@@ -8,7 +8,7 @@ export const Header = () => {
 
     return (
     <StyledHeader>
-        <Logo/>
+        <Logo iconId={"logo"} width={"100"} height={"60"} viewBox={"0 0 120 120"}/>
         <Menu/>
         <Social/>
     </StyledHeader>

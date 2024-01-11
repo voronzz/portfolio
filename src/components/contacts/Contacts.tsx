@@ -3,7 +3,7 @@ import {SectionTitle} from "../SectionFile";
 import {SectionSubTitle} from "../SectionSubTitle";
 import styled from "styled-components";
 
-export const Questions = () => {
+export const Contacts = () => {
     return (
         <StyledQuestions>
         <SectionTitle>For any questions please mail me:</SectionTitle>
