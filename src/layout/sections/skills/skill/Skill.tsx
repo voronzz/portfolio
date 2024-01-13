@@ -17,5 +17,6 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    width: 15%;
+  width: 15%;
+  padding-bottom: 100px;
 `

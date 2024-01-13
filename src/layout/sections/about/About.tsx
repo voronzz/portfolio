@@ -5,10 +5,12 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionFile";
 import {SectionSubTitle} from "../../../components/SectionSubTitle";
 import {Experience} from "../../../components/experience/Experience";
+import {Container} from "../../../components/Container";
 
 export const About = () => {
     return (
         <StyledAboutWrapper>
+            <Container>
             <FlexWrapper justify={"space-around"} direction={"column"}>
                 <SectionTitle>About Me</SectionTitle>
                 <SectionSubText>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</SectionSubText>
@@ -18,6 +20,7 @@ export const About = () => {
                 <Experience/>
             </FlexWrapper>
             <Photo src={photo} alt=""/>
+            </Container>
         </StyledAboutWrapper>
     );
 };
@@ -29,6 +32,7 @@ const Photo = styled.img`
 `
 
 const StyledAboutWrapper = styled.section`
+  //margin-top: 200px;
   min-height: 100vh;
   min-width: 1193px;
   display: flex;
