@@ -9,35 +9,55 @@ import {Container} from "../../../components/Container";
 
 export const About = () => {
     return (
-        <StyledAboutWrapper>
-            <Container>
-            <FlexWrapper justify={"space-around"} direction={"column"}>
-                <SectionTitle>About Me</SectionTitle>
-                <SectionSubText>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</SectionSubText>
-                <SectionTitle>Work Experience</SectionTitle>
-                <Experience/>
-                <SectionTitle>Education</SectionTitle>
-                <Experience/>
-            </FlexWrapper>
-            <Photo src={photo} alt=""/>
-            </Container>
-        </StyledAboutWrapper>
+        <Container>
+            <StyledAboutWrapper>
+                <FlexWrapper justify={"space-around"} direction={"column"}>
+                    <SectionAboutTitle>About Me</SectionAboutTitle>
+                    <SectionSubText>The Generator App is an online tool that helps you to export ready-made templates
+                        ready to work as your future website. It helps you to combine slides, panels and other
+                        components and export it as a set of static files: HTML/CSS/JS.</SectionSubText>
+                    <SectionAboutTitle>Work Experience</SectionAboutTitle>
+                    <SectionContainerItems>
+                        <Experience/>
+                    </SectionContainerItems>
+                    <SectionAboutTitle>Education</SectionAboutTitle>
+                    <SectionContainerItems>
+                        <Experience/>
+                    </SectionContainerItems>
+                </FlexWrapper>
+                <Photo src={photo} alt=""/>
+            </StyledAboutWrapper>
+        </Container>
+
     );
 };
 
-const Photo = styled.img`
-  width: 834px;
-  height: 834px;
-  object-fit: cover;
-`
 
 const StyledAboutWrapper = styled.section`
   //margin-top: 200px;
-  min-height: 100vh;
+  //min-height: 100vh;
   min-width: 1193px;
   display: flex;
   justify-content: space-between;
 `
-const SectionSubText = styled.p `
-min-width: 708px;
+const SectionAboutTitle = styled.h2`
+  margin-bottom: 38px;
+  font-size: 42px;
+  font-weight: 700;
+`
+const SectionContainerItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+`
+
+const SectionSubText = styled.p`
+  max-width: 708px;
+  text-align: left;
+  margin-bottom: 38px;
+`
+const Photo = styled.img`
+  width: 834px;
+  height: 834px;
+  object-fit: cover;
 `

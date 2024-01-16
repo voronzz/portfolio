@@ -5,14 +5,15 @@ import {Menu} from "../../components/menu/Menu";
 import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {theme} from "../../styles/Theme";
 
 export const Header = () => {
 
     return (
         <StyledHeader>
             <Container>
-                <FlexWrapper justify={'space-evenly'}>
-                <Logo iconId={"logo"} width={"100"} height={"60"} viewBox={"0 0 120 120"}/>
+                <FlexWrapper justify={'space-around'} align={'center'}>
+                <Logo/>
                 <Menu/>
                 <Social/>
                 </FlexWrapper>
@@ -23,9 +24,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     margin-top: 40px;
-  font-family: 'Dm Sans';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px
+    font-family: 'Dm Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  
 `;

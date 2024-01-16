@@ -18,7 +18,7 @@ export const Projects = () => {
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <SectionSubTitle>Things I’ve built so far</SectionSubTitle>
-                <FlexWrapper wrap={'wrap'} justify={'space-between'}>
+                <FlexWrapper wrap={'wrap'} justify={'space-between'} rowGap={'62px'}>
                     <Project src={project1}
                              title={"Project Tile goes here"}
                              text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
@@ -50,5 +50,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  height: 100vh;
+  //height: 100vh;
 `

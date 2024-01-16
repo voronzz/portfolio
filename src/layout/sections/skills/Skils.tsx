@@ -33,7 +33,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  margin-top: 200px;
-  min-height: 100vh;
+  //margin-top: 200px;
+  //min-height: 100vh;
   //min-width: 1193px;
 `
