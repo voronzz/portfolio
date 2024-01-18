@@ -18,11 +18,17 @@ export const About = () => {
                         components and export it as a set of static files: HTML/CSS/JS.</SectionSubText>
                     <SectionAboutTitle>Work Experience</SectionAboutTitle>
                     <SectionContainerItems>
-                        <Experience/>
+                        <Experience title={'Junior Web Developer'} booble={'Full Time'}
+                                    company={'Dr. Rajkumar’s Learning App'} city={'Bengaluru'}/>
+                        <Experience title={'Web Development Intern'} booble={'Internship'}
+                                    company={'IonPixelz Web Solutions'} city={'Bengaluru'}/>
+                        <Experience title={'SEO / SEM Specialist'} booble={'Internship'} company={'HAAPS'}
+                                    city={'Bengaluru'}/>
                     </SectionContainerItems>
                     <SectionAboutTitle>Education</SectionAboutTitle>
                     <SectionContainerItems>
-                        <Experience/>
+                        <Experience title={'Bachelor in Electronics & Communication'} booble={'Full Time'}
+                                    company={'Bangalore Instutute of Technology'}/>
                     </SectionContainerItems>
                 </FlexWrapper>
                 <Photo src={photo} alt=""/>
@@ -49,6 +55,7 @@ const SectionContainerItems = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 38px;
 `
 
 const SectionSubText = styled.p`

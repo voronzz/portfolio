@@ -5,22 +5,28 @@ import {Container} from "../Container";
 import {Icon} from "../icon/Icon";
 import {theme} from "../../styles/Theme";
 
-export const Experience = () => {
+type ExperienceProps = {
+    title: string;
+    company: string;
+    city?: string;
+    booble: string;
+}
+export const Experience = (props: ExperienceProps) => {
     return (
         <StyledHeader>
             <StyledContainer>
-                <p>Junior Web Developer</p>
-                <StyledBable><span>Full Time</span></StyledBable>
+                <p>{props.title}</p>
+                <StyledBable><span>{props.booble}</span></StyledBable>
             </StyledContainer>
             <StyledContainer>
                 <ContainerBottom>
                     <FlexWrapper align={'center'}>
                         <Icon iconId={'office-building'} width={"16"} height={"12"} viewBox={"0 0 16 12"}/>
-                        <ContainerBottomText>Dr. Rajkumar’s Learning App</ContainerBottomText>
+                        <ContainerBottomText>{props.company}</ContainerBottomText>
                     </FlexWrapper>
                     <FlexWrapper align={'center'}>
                         <Icon iconId={'marker'} width={"16"} height={"12"} viewBox={"0 0 16 12"}/>
-                        <ContainerBottomText>Bengaluru</ContainerBottomText>
+                        <ContainerBottomText>{props.city}</ContainerBottomText>
                     </FlexWrapper>
                 </ContainerBottom>
                 <div>
