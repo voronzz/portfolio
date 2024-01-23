@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Menu = () => {
     return (
@@ -21,6 +22,9 @@ ul {
     gap: 55px;
     list-style-type: none;
 }
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 a {
     text-decoration: none;
     color: #666666;

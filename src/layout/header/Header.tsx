@@ -6,6 +6,7 @@ import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {theme} from "../../styles/Theme";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 
 export const Header = () => {
 
@@ -13,9 +14,10 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={'space-around'} align={'center'}>
-                <Logo/>
-                <Menu/>
-                <Social/>
+                    <Logo/>
+                    <Menu/>
+                    <MobileMenu/>
+                    <Social/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -23,11 +25,11 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-    margin-top: 40px;
-    font-family: 'Dm Sans';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-  
+  margin-top: 40px;
+  font-family: 'Dm Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+
 `;

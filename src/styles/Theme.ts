@@ -7,5 +7,9 @@ export const theme = {
         text: '#666',
         subText: '#A7A7A7',
 
+    },
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
 }
