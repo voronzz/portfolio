@@ -23,6 +23,9 @@ li {
   align-items: center;
   padding-right: 20px;
 }
+  @media ${theme.media.tabletBig} {
+    display: none;
+  }
 }
   a {
     text-decoration: none;

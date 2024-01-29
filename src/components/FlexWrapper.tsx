@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 type FlexWrapperPropsType = {
     direction?: string;
@@ -6,6 +7,7 @@ type FlexWrapperPropsType = {
     align?: string;
     wrap?: string;
     rowGap?: string;
+    gap?: string;
 }
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
@@ -15,4 +17,8 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   flex-wrap: ${props => props.wrap || "nowrap"};
   height: 100%;
   row-gap: ${props => props.rowGap || ''};
+
+  @media ${theme.media.tablet} {
+    justify-content: center;
+  }
 `

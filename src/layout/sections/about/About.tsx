@@ -6,6 +6,7 @@ import {SectionTitle} from "../../../components/SectionFile";
 import {SectionSubTitle} from "../../../components/SectionSubTitle";
 import {Experience} from "../../../components/experience/Experience";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const About = () => {
     return (
@@ -42,7 +43,7 @@ export const About = () => {
 const StyledAboutWrapper = styled.section`
   //margin-top: 200px;
   //min-height: 100vh;
-  min-width: 1193px;
+  max-width: 1193px;
   display: flex;
   justify-content: space-between;
 `
@@ -50,6 +51,10 @@ const SectionAboutTitle = styled.h2`
   margin-bottom: 38px;
   font-size: 42px;
   font-weight: 700;
+  
+  @media ${theme.media.mobile} {
+    font-size: 38px;
+  }
 `
 const SectionContainerItems = styled.div`
   display: flex;
@@ -62,9 +67,15 @@ const SectionSubText = styled.p`
   max-width: 708px;
   text-align: left;
   margin-bottom: 38px;
+  
+  @media ${theme.media.mobile} {
+    font-size: 16px;
+  }
 `
 const Photo = styled.img`
-  width: 834px;
-  height: 834px;
   object-fit: cover;
+
+  @media ${theme.media.tabletBig} {
+    display: none;
+  }
 `

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme";
 
 type SkillPropsType = {
     iconId: string;
@@ -19,4 +20,9 @@ export const Skill = (props: SkillPropsType) => {
 const StyledSkill = styled.div`
   width: 15%;
   padding-bottom: 100px;
+  flex-grow: 1;
+
+  @media ${theme.media.mobile} {
+     width: inherit;
+  }
 `

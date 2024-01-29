@@ -24,8 +24,8 @@ export const Project = (props: ProjectPropsType) => {
                     <Link>Live Preview</Link>
                 </div>
                 <div>
-                        <Icon iconId={'gitMin'} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                        <Link>View Code</Link>
+                    <Icon iconId={'gitMin'} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
+                    <Link>View Code</Link>
                 </div>
             </FlexWrapper>
         </StyledProject>
@@ -39,8 +39,10 @@ const StyledProject = styled.div`
   border-radius: 20px;
   background: #FFF;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+  
   div {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 10px;
   }
 `

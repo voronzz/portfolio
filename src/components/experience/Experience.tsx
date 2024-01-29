@@ -49,6 +49,12 @@ const StyledHeader = styled.div`
     font-family: Poppins;
     font-size: 20px;
   }
+
+  @media ${theme.media.mobile} {
+        p {
+          font-size: 16px;
+        }
+  }
 `;
 const StyledContainer = styled.div`
   display: flex;
@@ -65,6 +71,10 @@ const ContainerBottomText = styled.span`
   font-weight: 500;
   line-height: 28px;
   margin-right: 20px;
+
+  @media ${theme.media.mobile} {
+      font-size: 8px;
+  }
 `;
 
 const StyledBable = styled.button`
@@ -83,4 +93,8 @@ const StyledBable = styled.button`
 `
 const ContainerBottom = styled.div`
  display: flex;
+
+  @media ${theme.media.mobile} {
+    
+  }
 `

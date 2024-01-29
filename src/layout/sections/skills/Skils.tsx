@@ -6,6 +6,7 @@ import {SectionTitle} from "../../../components/SectionFile";
 import {SectionSubTitle} from "../../../components/SectionSubTitle";
 import {Skill} from "./skill/Skill";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
@@ -36,4 +37,22 @@ const StyledSkills = styled.section`
   //margin-top: 200px;
   //min-height: 100vh;
   //min-width: 1193px;
+  
+  @media ${theme.media.tablet} {
+    h2 {
+      font-size: 42px;
+    }
+    div {
+      gap: 10px;
+    }
+  }
+  @media ${theme.media.mobile} {
+    padding: 0;
+    
+    p {
+      font-size: 28px;
+    }
+  }
+  
+  
 `

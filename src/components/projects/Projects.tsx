@@ -11,6 +11,7 @@ import project4 from "../../assets/images/project-4.png"
 import project5 from "../../assets/images/project-5.png"
 import project6 from "../../assets/images/project-6.png"
 import {Container} from "../Container";
+import {theme} from "../../styles/Theme";
 
 export const Projects = () => {
     return (
@@ -51,4 +52,10 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
   //height: 100vh;
+
+  @media ${theme.media.tablet} {
+    h2 {
+      font-size: 42px;
+    }
+  }
 `

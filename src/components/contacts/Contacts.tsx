@@ -25,6 +25,13 @@ const StyledContactTitle = styled.h2`
   font-size: 58px;
   font-style: normal;
   font-weight: 700;
+
+  @media ${theme.media.tablet} {
+    font-size: 44px;
+  }
+  @media ${theme.media.mobile} {
+    font-size: 38px;
+  }
 `
 
 const StyledContactSubTitle = styled.p`
@@ -35,4 +42,12 @@ const StyledContactSubTitle = styled.p`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media ${theme.media.tablet} {
+    font-size: 44px;
+  }
+  @media ${theme.media.mobile} {
+    margin-top: 8px;
+    font-size: 36px;
+  }
 `

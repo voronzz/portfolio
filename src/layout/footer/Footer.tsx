@@ -46,21 +46,46 @@ const StyledFooterText = styled.p`
   :nth-child(2) {
     padding-right: 35px;
   }
-
+  
+  @media ${theme.media.mobile} {
+    font-size: 12px;
+  }
 `
 const FooterContainerTop = styled.div`
   padding-bottom: 40px;
   color: ${theme.color.title};
 
+  @media ${theme.media.tablet} {
+    svg {
+      width: 70px;
+    }
+  }
+  @media ${theme.media.mobile} {
+    svg {
+      width: 55px;
+    }
+  }
+}
+
 `
 const FooterContainerBottom = styled.div`
   padding-top: 40px;
+  
+  @media ${theme.media.mobile} {
+    p {
+      font-size: 13px;
+    }
+    }
+  }
 `
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
  svg {
     fill: ${theme.color.title};
+  }
+  @media ${theme.media.tablet} {
+    margin-left: 35px;
   }
 `
 const StyledFooterTextBottom = styled.p`

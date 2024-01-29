@@ -31,5 +31,21 @@ const StyledHeader = styled.header`
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+  //.Container {
+     position: fixed;
+    top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+  //}
+  @media ${theme.media.tablet} {
+    overflow: hidden;
 
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+ 
+ 
 `;
